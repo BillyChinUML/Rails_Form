@@ -4,6 +4,7 @@
   <% @users.each do |user| %>
   <li>
     <strong>Username:</strong> <%= user.username %>, <strong>E-mail:</strong> <%= user.email %>
+    <%= link_to "Edit Account", edit_user_path(user) %>
   </li>
   <% end %>
 </ul>
